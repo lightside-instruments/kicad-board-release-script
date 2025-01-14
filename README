@@ -1,0 +1,6 @@
+Script that generates release binaries (gerbers, drill files, schematics (PDF), PCB (PDF), 3d model files (STEP,WRL))
+
+cd myproject
+mkdir release-1.0
+cd release-1.0
+../../kicad-board-release-script/release.sh
