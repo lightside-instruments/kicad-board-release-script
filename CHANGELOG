@@ -1,3 +1,9 @@
+kicad-board-release-script (1.0ubuntu1) UNRELEASED; urgency=medium
+
+  * Added drill file generation.
+
+ -- Joar Heimonen <joar@lightside-instruments.com>  Thu, 23 Jan 2025 16:03:42 +0100
+
 kicad-board-release-script (1.0) unstable; urgency=medium
 
   * Initial release.
