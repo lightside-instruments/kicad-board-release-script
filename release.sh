@@ -5,8 +5,9 @@ kicad-cli sch erc --output=erc.log ../*.kicad_sch
 rm -rf gerbers
 mkdir gerbers
 kicad-cli pcb export gerbers --output=gerbers ../*.kicad_pcb
-kicad-cli pcb export drill --output=drill ../*.kicad_pcb
-cp drill/* gerbers
+kicad-cli pcb export pdf --output=pcb.pdf --layers='*' ../*.kicad_pcb
+kicad-cli pcb export drill ../*.kicad_pcb
+cp *.drl gerbers
 zip gerbers.zip gerbers/*
 kicad-cli pcb export vrml --output=model3d.wrl ../*.kicad_pcb
 kicad-cli pcb export step --output=model3d.step ../*.kicad_pcb
